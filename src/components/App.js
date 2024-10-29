@@ -1,11 +1,8 @@
 import Router from "./Router";
 import { useState } from "react";
-// import { authService } from "../fbase";
+import { authService } from "../fbase";
 function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
-  console.log("hello");
-  console.log("API Key:", process.env.REACT_APP_AUTH_DOMAIN);
-
+  const [isLoggedIn, setIsLoggedIn] = useState(authService.currentUser);
   return (
     <>
       <div className="App">

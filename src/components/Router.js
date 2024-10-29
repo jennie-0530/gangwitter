@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "../routes/Home";
-import Login from "../routes/Login";
+import Login from "../routes/Auth";
 
 const Router = ({ isLoggedIn }) => {
   return (
